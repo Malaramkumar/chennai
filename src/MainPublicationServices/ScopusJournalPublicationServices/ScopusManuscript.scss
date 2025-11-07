@@ -1,0 +1,159 @@
+.scopusjournal-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+
+.scopusjournal-left {
+  flex: 1;
+  max-width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+
+  @media (max-width: 992px) {
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+
+      &::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: #3498db;
+      }
+    }
+  }
+}
+
+.scopusjournal-main {
+  flex: 2;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  h2, h3 {
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+
+    li {
+      list-style-type: disc;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ecf0f1;
+      color: #2c3e50;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+  }
+
+  .scopusjournal-highlight {
+    background-color: #eaf6ff;
+    padding: 1rem;
+    border-left: 4px solid #3498db;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  .scopusjournal-keywords {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+}
+
+.scopusjournal-right {
+  flex: 1;
+  max-width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+
+  @media (max-width: 992px) {
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        color: #3498db;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

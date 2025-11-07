@@ -1,0 +1,199 @@
+.PublicationServices-header {
+  position: fixed;
+  top: 0;
+  left: 5rem;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to right, #003B5C, #005F86);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 40;
+}
+
+.PublicationServices-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.PublicationServices-logo-container {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.PublicationServices-logo-box {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 8px;
+  color: #003B5C;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PublicationServices-university-name {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 1px;
+  h1{
+    color:#fff;
+  }
+}
+
+.PublicationServices-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100px;
+  background: linear-gradient(to bottom, #003B5C, #002F4F);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+  z-index: 50;
+}
+
+.PublicationServices-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex: 1;
+}
+
+.PublicationServices-nav-text-item {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.PublicationServices-sidebar-footer {
+  margin-top: auto;
+}
+
+.PublicationServices-footer-logo-box {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PublicationServices-footer-logo-text {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Tablets */
+@media (max-width: 1023px) {
+  .PublicationServices-header {
+    left: 4rem;
+    height: 80px;
+    padding: 0 1rem;
+  }
+
+  .PublicationServices-logo-container {
+    margin-left: 20px;
+    gap: 10px;
+  }
+
+  .PublicationServices-logo-box {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .PublicationServices-university-name {
+    font-size: 18px;
+  }
+
+  .PublicationServices-sidebar {
+    width: 80px;
+    padding: 4rem 0;
+  }
+
+  .PublicationServices-nav-text-item {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .PublicationServices-footer-logo-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .PublicationServices-footer-logo-text {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .PublicationServices-header {
+    left: 0;
+    height: 70px;
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .PublicationServices-logo-container {
+    margin-left: 0;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .PublicationServices-university-name {
+    font-size: 16px;
+  }
+
+  .PublicationServices-sidebar {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem;
+    z-index: 50;
+  }
+
+  .PublicationServices-sidebar-nav {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .PublicationServices-nav-text-item {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .PublicationServices-sidebar-footer {
+    display: none;
+  }
+}

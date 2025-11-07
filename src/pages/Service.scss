@@ -1,0 +1,57 @@
+.phd-services {
+  padding: 60px 40px;
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  text-decoration: none;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #102a43;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .servicegrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+  }
+
+  .card {
+    text-decoration: none;
+    background: #fff;
+    padding: 24px 28px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+      .icon {
+        transform: translateX(5px);
+        color: #0b3cc1;
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    .icon {
+      font-size: 18px;
+      color: #194cb8;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.scopus-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f9fbfd;
+  font-family: "Poppins", sans-serif;
+
+  .left-sidebar, .right-sidebar {
+    width: 280px;
+    background: #eef2f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #003366;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 0.75rem;
+        a {
+          color: #1b4b91;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+
+    h1 {
+      font-size: 2rem;
+      color: #002d5b;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+
+      h2 {
+        color: #004080;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .process-table {
+        width: 100%;
+        border-collapse: collapse;
+        th, td {
+          border: 1px solid #ccc;
+          padding: 0.75rem;
+        }
+        th {
+          background: #eaf2ff;
+        }
+      }
+
+      .faq-list {
+        details {
+          background: #f3f8ff;
+          border: 1px solid #d0e3ff;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+          padding: 1rem;
+          summary {
+            font-weight: 600;
+            cursor: pointer;
+          }
+          p {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .right-sidebar {
+    .cta-box {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #d0e3ff;
+      border-radius: 10px;
+      text-align: center;
+
+      .cta-button {
+        margin-top: 1rem;
+        display: inline-block;
+        background: #004080;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+        &:hover {
+          background: #002d5b;
+        }
+      }
+    }
+  }
+}

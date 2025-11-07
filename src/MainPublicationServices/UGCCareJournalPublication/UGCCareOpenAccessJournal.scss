@@ -1,0 +1,287 @@
+$primary-color: #1c3879;
+$accent-color: #2a9d8f;
+$background-color: #f9fafc;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+}
+
+.UGCCareOpenAccessJournalPublication {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: calc(100vh - 100px);
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+.UGCCareOpenAccessJournalPublication-main {
+  padding: 2rem;
+  background-color: #f9fafc;
+  color: #222;
+  flex: 1;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: #264653;
+    border-left: 5px solid $accent-color;
+    padding-left: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $primary-color;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .UGCCareOpenAccessJournalPublication-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 130px;
+    align-items: start; /* Ensure grid items align at the top */
+    max-width: 1600px; /* Prevent stretching on large screens */
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .UGCCareOpenAccessJournalPublication-left {
+    width: 280px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 100px; /* Match sidebar top offset */
+    height: fit-content;
+
+    h3 {
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .UGCCareOpenAccessJournalPublication-right {
+    width: 280px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 100px; /* Match sidebar top offset */
+    height: fit-content;
+
+    h3 {
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+
+  .UGCCareOpenAccessJournalPublication-center {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    width: 100%;
+  }
+
+  .UGCCareOpenAccessJournalPublication-table-container {
+    overflow-x: auto;
+    background-color: #fefefe;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+
+      thead {
+        background-color: $primary-color;
+        color: #fff;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 0.75rem;
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      td:first-child {
+        text-align: left;
+        font-weight: 600;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  .kerala-alluniversityfaq-section {
+    margin-top: 2rem;
+
+    details {
+      margin-bottom: 1.25rem;
+      padding: 1rem;
+      background-color: #f7fafd;
+      border-left: 4px solid $primary-color;
+      border-radius: 6px;
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: $primary-color;
+      }
+
+      p {
+        margin: 0.5rem 0 0;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .UGCCareOpenAccessJournalPublication-left,
+    .UGCCareOpenAccessJournalPublication-right {
+      width: 100%;
+      position: static;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .UGCCareOpenAccessJournalPublication {
+      flex-direction: column;
+      padding-left: 0;
+      padding-top: 0;
+    }
+
+    .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+
+    .UGCCareOpenAccessJournalPublication-main {
+      padding: 1rem;
+      margin-left: 0;
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .UGCCareOpenAccessJournalPublication-center {
+        padding: 1rem;
+      }
+
+      .UGCCareOpenAccessJournalPublication-table-container table {
+        font-size: 0.85rem;
+        min-width: 100%;
+      }
+    }
+  }
+}

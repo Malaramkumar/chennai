@@ -1,0 +1,120 @@
+.scivsscopus-layout {
+  display: flex;
+  padding: 120px 2rem 2rem; /* Adjusted for header (100px) */
+  background: #f7f9fb;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 80px; /* Offset for fixed .sidebar (100px) */
+
+  .scivsscopus-left-sidebar {
+    flex: 0 0 250px; /* Match .sidebar width */
+  }
+
+  .scivsscopus-right-sidebar {
+    flex: 0 0 250px;
+   
+  }
+
+  .scivsscopus-main-content {
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.4rem;
+        color: #000;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+
+        li {
+          margin-bottom: 0.3rem;
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+      }
+
+      blockquote {
+        background: #eef2f8;
+        border-left: 4px solid #0b3d91;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-style: italic;
+        color: #555;
+      }
+    }
+
+    .comparison-table {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        th,
+        td {
+          padding: 0.8rem;
+          border: 1px solid #ccc;
+          text-align: left;
+        }
+
+        th {
+          background-color: #e0e7ff;
+        }
+
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+
+    .conclusion {
+      font-weight: 500;
+      color: #000;
+      margin-top: 2rem;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .scivsscopus-layout {
+    margin-left: 80px; /* Match .sidebar width (80px) */
+    padding: 100px 1rem 1rem; /* Adjust for tablet header (80px) */
+  }
+
+  .scivsscopus-left-sidebar {
+    flex: 0 0 80px; /* Match .sidebar */
+  }
+
+  .scivsscopus-right-sidebar {
+    display: none; /* Ensure hidden */
+  }
+}
+
+@media (max-width: 767px) {
+  .scivsscopus-layout {
+    margin-left: 0; /* No offset for bottom nav */
+    padding: 80px 1rem 1rem; /* Adjust for mobile header (70px) */
+    flex-direction: column; /* Stack content */
+  }
+
+  .scivsscopus-left-sidebar,
+  .scivsscopus-right-sidebar {
+    display: none; /* Hide sidebars on mobile */
+  }
+
+  .scivsscopus-main-content {
+    flex: none; /* Full width */
+    padding-bottom: 70px; /* Space for bottom .sidebar */
+  }
+}

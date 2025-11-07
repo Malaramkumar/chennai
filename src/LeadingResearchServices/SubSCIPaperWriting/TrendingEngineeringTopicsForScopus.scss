@@ -1,0 +1,73 @@
+.engscopus-layout {
+  display: flex;
+  padding: 2rem;
+  background: #f7f9fb;
+  font-family: 'Poppins', sans-serif;
+
+.engscopus-left-sidebar {
+  flex: 0 0 250px;
+  margin-left: 5rem;
+}
+
+.engscopus-right-sidebar {
+  flex: 0 0 250px;
+  margin-left: 2rem;
+}
+
+  .engscopus-main-content {
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+
+        li {
+          margin-bottom: 0.3rem;
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+
+    .comparison-table {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        th,
+        td {
+          padding: 0.8rem;
+          border: 1px solid #ccc;
+          text-align: left;
+        }
+
+        th {
+          background-color: #e0e7ff;
+        }
+      }
+    }
+
+    .conclusion {
+      font-weight: 500;
+      color: #444;
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.phd-proposal-hero {
+  padding: 3rem 1.5rem;
+  // background-color: #002D42;
+
+  .hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #fafafa;
+    }
+  }
+
+  .quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    .quick-card {
+      background-color: #002D42;
+      border: 1px solid #30E3FF;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: transform 0.2s ease;
+
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #fff;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-weight: 600;
+        color: #30E3FF;
+        text-decoration: none;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+
+  // 🔽 Responsive Styles
+  @media (max-width: 768px) {
+    .hero-content {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    .quick-links {
+      grid-template-columns: 1fr;
+
+      .quick-card {
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
+
+    .hero-content {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 0.95rem;
+      }
+    }
+
+    .quick-links {
+      gap: 1rem;
+
+      .quick-card {
+        h3 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        .read-more {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

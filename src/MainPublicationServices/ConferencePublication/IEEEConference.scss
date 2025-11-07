@@ -1,0 +1,78 @@
+.IEEEConference-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px;
+  background: #f6f9ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.IEEEConference-left, .IEEEConference-right {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.IEEEConference-main {
+  flex: 2.5;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.IEEEConference-main h1 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.IEEEConference-main h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #004080;
+}
+
+.IEEEConference-main ul, .IEEEConference-main ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.IEEEConference-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.IEEEConference-table th, .IEEEConference-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.IEEEConference-faq-item {
+  margin-bottom: 20px;
+}
+
+.IEEEConference-faq-item h4 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #002b5e;
+}
+
+.IEEEConference-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.IEEEConference-tags span {
+  background-color: #e0e7ff;
+  color: #003099;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}

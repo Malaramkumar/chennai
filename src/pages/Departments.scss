@@ -1,0 +1,94 @@
+.departments-section {
+  padding: 4rem 1rem;
+  color: #fff;
+
+  .departments-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .departments-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .departments-subtext {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  .departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .departments-card {
+    background-color: #002d42;
+    border: 1px solid #30e3ff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    .departments-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #30e3ff;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .departments-cta {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #30e3ff;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s;
+
+      &:hover {
+        color: #fff;
+        border-bottom: 1px solid #30e3ff;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  button {
+    background-color: #002d42;
+    width: auto;
+    color: #30e3ff;
+    font-size: 18px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #30e3ff;
+      color: #002d42;
+    }
+  }
+}

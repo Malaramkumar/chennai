@@ -1,0 +1,154 @@
+.main {
+  color: #fff;
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.phd-research-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 4rem;
+
+  h1 {      
+    margin-bottom: 1rem;
+  }
+
+  .subtitle p {
+    
+    color: #fff;
+    margin: 0.3rem 0;
+  }
+
+  .point {
+    margin-top: 16px;
+    border: 1px solid #30E3FF;
+    color: #fff;
+  }
+
+  .para {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    max-width: 700px;
+    margin-inline: auto;
+  }         
+}
+
+
+.mission {
+min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  //align-items: center;
+  padding: 2rem;
+  color: #ffffff;
+  text-align: justify; 
+
+  h1 {
+ 
+    margin-bottom: 1.5rem;
+    max-width: 850px;
+  }
+
+  p {
+    line-height: 1.7;
+    max-width: 850px;
+    padding: 30px;
+    border: 1px solid #30E3FF;
+    color: #fff;
+    margin-bottom: 20px;
+}                           
+}
+.nri {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  //align-items: center;
+  padding: 2rem;
+  color: #ffffff;
+  text-align: justify; 
+
+  h1 {
+ 
+    margin-bottom: 1.5rem;
+    max-width: 850px;
+  }
+
+  p {
+    line-height: 1.7;
+    max-width: 850px;
+    border: 1px solid #30E3FF;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 48px 16px;
+  }
+
+  .phd-research-container {
+    padding-bottom: 48px;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .para {
+      font-size: 15px;
+      padding: 0 16px;
+    }
+  }
+
+  .mission,
+  .nri {
+    padding: 24px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 15px;
+      padding: 0 8px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 40px 12px;
+  }
+
+  .phd-research-container {
+    h1 {
+      font-size: 24px;
+    }
+
+    .subtitle p {
+      font-size: 14px;
+    }
+
+    .para {
+      font-size: 14px;
+      padding: 0 8px;
+    }
+  }
+
+  .mission,
+  .nri {
+    padding: 16px;
+
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

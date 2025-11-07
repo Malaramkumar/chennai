@@ -1,0 +1,124 @@
+.contact-wrapper {
+  background: linear-gradient(to right, #0a5880, #2393c3);
+  padding: 64px 16px; 
+  display: flex;
+  justify-content: center;
+}
+.contact-btn{
+  width: 100px;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  .contact-left {
+    flex: 1;
+    padding: 32px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; 
+
+    .section-title {
+      font-size: 24px; 
+      text-transform: uppercase;
+      font-weight: 700;
+      align-self: flex-start;
+      border-left: 4px solid #3ca5dd;
+      padding-left: 12px; 
+    }
+
+    .contact-image {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .contact-info {
+      text-align: left;
+      width: 100%;
+
+      p {
+        margin: 16px 0; 
+        font-size: 15.2px; 
+        }
+    }
+  }
+
+  .contact-right {
+    flex: 1;
+    background: transparent;
+    padding: 32px; 
+
+    h2 {
+      font-size: 28.8px; 
+      font-weight: 600;
+      margin-bottom: 8px; 
+    }
+
+    p {
+      font-size: 16px; 
+      margin-bottom: 24px; 
+      color: #d6eaf5;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; 
+      
+
+      .form-row {
+        display: flex;
+        gap: 16px; 
+
+        input {
+          flex: 1;
+        }
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+      }
+
+      input,
+      textarea {
+        padding: 12px 16px; 
+        border: none;
+        border-radius: 4px;
+        font-size: 16px; 
+        background: #c7dfea;
+        color: #000;
+        resize: none;
+      }
+
+      .captcha-box {
+        margin-top: 16px; 
+      }
+
+      button {
+        margin-top: 16px; 
+        padding: 12px; 
+        font-size: 16px; 
+        background: transparent;
+        border: 1px solid #3ca5dd;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: #3ca5dd;
+        }
+      }
+    }
+  }
+}

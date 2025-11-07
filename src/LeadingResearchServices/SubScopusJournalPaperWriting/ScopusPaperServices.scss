@@ -1,0 +1,133 @@
+.scopus-layout {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 80px;
+  background: #f9fbfd;
+  font-family: "Poppins", sans-serif;
+
+  .scopus-left-sidebar,
+  .scopus-right-sidebar {
+    flex: 0 0 280px;
+    background: #eef2f8;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 100px;
+
+    h3 {
+      font-size: 1.1rem;
+      color: #0c3c78;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.7rem;
+        font-size: 0.95rem;
+
+
+        a {
+          color: #0a4c8c;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .scopus-main-content {
+    flex: 1;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    min-width: 0;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0c3c78;
+    }
+
+    h2 {
+      color: #0c3c78;
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+    }
+
+    ul{
+      margin-left: 1.5rem;
+      list-style: none;
+    }
+
+    ol {
+      margin-left: 1.5rem;
+      
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .scopus-faq-section {
+      margin-top: 2rem;
+
+      details {
+        margin-bottom: 1rem;
+
+        summary {
+          font-weight: 600;
+          cursor: pointer;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  // Responsive
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+
+    .scopus-left-sidebar,
+    .scopus-right-sidebar {
+      flex: 1 1 100%;
+      position: static;
+      max-height: none;
+      margin-bottom: 2rem;
+    }
+
+    .scopus-main-content {
+      flex: 1 1 100%;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+
+    .scopus-main-content h1 {
+      font-size: 1.6rem;
+    }
+
+    .scopus-left-sidebar,
+    .scopus-right-sidebar {
+      padding: 1rem;
+    }
+  }
+}

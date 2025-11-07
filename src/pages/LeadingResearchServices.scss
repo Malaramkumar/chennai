@@ -1,0 +1,135 @@
+.research-services {
+  padding: 4rem 1rem;
+
+  .container {
+    max-width: 1280px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .subtext {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .service-card {
+    background-color: #002d42;
+    border: 1px solid #30e3ff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+
+    .icon {
+      color: #f5f6f7;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fcf5f5;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #fcfafa;
+      margin-bottom: 1rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #30e3ff;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s;
+
+      &:hover {
+        color: #fff;
+        border-bottom: 1px solid #30e3ff;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  /* 📱 Mobile Devices (up to 600px) */
+  @media (max-width: 600px) {
+    .main-heading {
+      font-size: 1.5rem;
+    }
+
+    .subtext {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr; /* single column */
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  /* 📱 Tablets (600px - 900px) */
+  @media (max-width: 900px) and (min-width: 601px) {
+    .main-heading {
+      font-size: 1.8rem;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* two columns */
+      gap: 1.8rem;
+    }
+
+    .service-card {
+      padding: 1.8rem;
+    }
+  }
+
+  /* 🖥️ Large Screens (above 1280px) */
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1400px;
+    }
+
+    .services-grid {
+      gap: 2.5rem;
+    }
+  }
+}

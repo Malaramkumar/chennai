@@ -1,0 +1,113 @@
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(to right, #c6d9f7, #fcf5f5);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  color: #1f2937;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.phd-guidance-container {
+  padding: 3rem;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  color: #374151;
+  line-height: 1.8;
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.phd-guidance-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.phd-guidance-container p {
+  margin-bottom: 1.8rem;
+  font-size: 1.1rem;
+  color: #2d2d2d;
+}
+
+.phd-guidance-container ol {
+  padding-left: 1.8rem;
+  margin-bottom: 2.2rem;
+  list-style: decimal;
+}
+
+.phd-guidance-container ol li {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #1f2937;
+}
+
+.phd-guidance-container ul {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-top: 0.75rem;
+}
+
+.phd-guidance-container ul li {
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.phd-guidance-container strong {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .phd-guidance-container {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    padding: 12px;
+  }
+}
+
+.servicefaq-section {
+    margin: auto;
+    max-width: 900px;
+
+    h2 {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #002244;
+    }
+
+    details {
+      background: #f8f9fc;
+      border: 1px solid #d1d9e6;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: #004080;
+      }
+
+      p {
+        margin-top: 10px;
+        line-height: 1.6;
+        color:black;
+      }
+    }
+  }

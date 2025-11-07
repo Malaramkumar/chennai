@@ -1,0 +1,20 @@
+.hexagon{
+position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+  opacity: .4;
+}
+
+.hex-1 {
+  width: 200px;
+  height: auto;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  position: relative;
+  z-index: -1;
+  transition: transform 0.1s linear;
+}

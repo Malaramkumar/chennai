@@ -1,0 +1,129 @@
+.college-wrapper {
+  margin-top: -92px;
+  margin-left: 84px;
+  padding: 32px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 32px;
+    color: #1f2937;
+  }
+}
+
+.college-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.college-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  h3 {
+    font-size: 17.6px;
+    color: #111827;
+    margin-bottom: 16px;
+    font-weight: 600;
+    min-height: 60px;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.college-learn-more-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  font-size: 15.2px;
+  color: white;
+  background-color: #3b82f6;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  span {
+    margin-left: 5px;
+    font-size: 17.6px;
+  }
+
+  &:hover {
+    background-color: #2563eb;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .college-wrapper {
+    margin-left: 20px;
+    padding: 24px;
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  .college-card {
+    padding: 20px;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .college-learn-more-btn {
+    font-size: 14px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .college-wrapper {
+    margin-left: 0px;
+    padding: 16px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .college-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .college-card {
+    padding: 16px;
+    max-width: 100%;
+
+    h3 {
+      font-size: 15px;
+    }
+  }
+
+  .college-learn-more-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+}

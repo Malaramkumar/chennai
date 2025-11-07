@@ -1,0 +1,154 @@
+.review-article {
+  padding: 4rem 1rem;
+  background-color: #f7f9fc;
+  color: #1d1d1f;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-inline: auto;
+    color: #333;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    .feature-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      text-align: left;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+
+      svg {
+        color: #00509e;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+    }
+  }
+
+  .comparison-table {
+    overflow-x: auto;
+    margin-bottom: 2.5rem;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        font-size: 0.95rem;
+      }
+
+      th {
+        background: #00509e;
+        color: white;
+        font-weight: 600;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .architecture {
+    background: #ffffff;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    color: #222;
+    text-align: left;
+  }
+
+  .highlights {
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 800px;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+        padding-left: 1.2rem;
+        position: relative;
+
+        &::before {
+          content: "✔";
+          color: #008f53;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .cta-section {
+    margin-top: 2rem;
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #00509e;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #003e7e;
+      }
+    }
+  }
+}

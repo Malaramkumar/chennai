@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECE Domains</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Cinzel", serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .accordion {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    details {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 15px 20px;
+      background: #0077b6;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none; /* remove default triangle */
+    }
+
+    summary:after {
+      content: "+";
+      font-size: 1.5rem;
+    }
+
+    details[open] summary:after {
+      content: "−";
+    }
+
+    ul {
+      list-style: none;
+      padding: 15px 25px;
+      margin: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #0077b6;
+      transition: color 0.3s;
+    }
+
+    ul li a:hover {
+      color: #023e8a;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Electronics and Communication Engineering (ECE)</h1>
+  <div class="accordion">
+
+    <details>
+      <summary>VLSI Design & Embedded Systems</summary>
+      <ul>
+        <li><a href="#">Low Power VLSI Architectures</a></li>
+        <li><a href="#">FPGA-based System Design</a></li>
+        <li><a href="#">VLSI for Artificial Intelligence Applications</a></li>
+        <li><a href="#">Hardware-Software Co-Design</a></li>
+        <li><a href="#">Nanoelectronics and Emerging Devices</a></li>
+        <li><a href="#">Embedded VLSI Signal Processing</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Embedded Systems</summary>
+      <ul>
+        <li><a href="#">Real-Time Operating Systems (RTOS) in Embedded Applications</a></li>
+        <li><a href="#">Embedded System Security and Cryptography</a></li>
+        <li><a href="#">ARM & RISC-V Based System Development</a></li>
+        <li><a href="#">IoT-enabled Embedded Devices</a></li>
+        <li><a href="#">Machine Learning in Embedded Platforms</a></li>
+        <li><a href="#">Energy-Efficient Embedded Systems</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Communication Systems</summary>
+      <ul>
+        <li><a href="#">5G and 6G Wireless Communication Systems</a></li>
+        <li><a href="#">MIMO and Massive MIMO Antenna Techniques</a></li>
+        <li><a href="#">Optical Fiber Communication Technologies</a></li>
+        <li><a href="#">Software Defined Radio (SDR)</a></li>
+        <li><a href="#">Cognitive Radio Networks</a></li>
+        <li><a href="#">Error Control Coding in Modern Communication</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Signal Processing</summary>
+      <ul>
+        <li><a href="#">Digital Image and Video Signal Processing</a></li>
+        <li><a href="#">Speech and Audio Signal Processing</a></li>
+        <li><a href="#">Biomedical Signal Processing</a></li>
+        <li><a href="#">Adaptive Filtering and Applications</a></li>
+        <li><a href="#">Compressive Sensing in Signal Processing</a></li>
+        <li><a href="#">AI-driven Signal Enhancement Techniques</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>IoT (Internet of Things)</summary>
+      <ul>
+        <li><a href="#">IoT-based Smart Home Automation</a></li>
+        <li><a href="#">Industrial IoT (IIoT) for Industry 4.0</a></li>
+        <li><a href="#">IoT in Healthcare Monitoring Systems</a></li>
+        <li><a href="#">IoT-based Precision Agriculture</a></li>
+        <li><a href="#">Edge and Fog Computing in IoT</a></li>
+        <li><a href="#">Secure IoT Architectures</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Control Systems & Robotics</summary>
+      <ul>
+        <li><a href="#">Adaptive and Nonlinear Control Systems</a></li>
+        <li><a href="#">Autonomous Robot Navigation and Path Planning</a></li>
+        <li><a href="#">Swarm Robotics and Multi-Agent Systems</a></li>
+        <li><a href="#">AI-Powered Robotic Control Systems</a></li>
+        <li><a href="#">Control in Cyber-Physical Systems</a></li>
+        <li><a href="#">Robotic Vision and Sensor Fusion</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Wireless Sensor Networks (WSN)</summary>
+      <ul>
+        <li><a href="#">Energy-Efficient Routing in WSN</a></li>
+        <li><a href="#">Secure Data Transmission in WSN</a></li>
+        <li><a href="#">IoT Integration with WSN</a></li>
+        <li><a href="#">WSN for Environmental and Disaster Monitoring</a></li>
+        <li><a href="#">Underwater Wireless Sensor Networks</a></li>
+        <li><a href="#">AI-based WSN Optimization</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Biomedical Electronics</summary>
+      <ul>
+        <li><a href="#">Wearable Biomedical Devices</a></li>
+        <li><a href="#">Implantable Medical Electronics</a></li>
+        <li><a href="#">Biomedical Signal Acquisition and Processing</a></li>
+        <li><a href="#">Brain-Computer Interface Systems</a></li>
+        <li><a href="#">AI in Biomedical Diagnostics</a></li>
+        <li><a href="#">IoT-enabled Healthcare Devices</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Cryptography & Security in ECE</summary>
+      <ul>
+        <li><a href="#">Hardware Security and Trusted Computing</a></li>
+        <li><a href="#">Cryptographic Algorithms for Embedded Devices</a></li>
+        <li><a href="#">Blockchain in Secure Communication</a></li>
+        <li><a href="#">Post-Quantum Cryptography in Electronics</a></li>
+        <li><a href="#">Biometric Security Systems</a></li>
+        <li><a href="#">Side-Channel Attack Resistance in Hardware</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Satellite & Space Communication</summary>
+      <ul>
+        <li><a href="#">Satellite Communication for 5G/6G Networks</a></li>
+        <li><a href="#">CubeSat and Nanosatellite Technologies</a></li>
+        <li><a href="#">Deep Space Communication Systems</a></li>
+        <li><a href="#">Satellite IoT (Sat-IoT) Applications</a></li>
+        <li><a href="#">GNSS (Global Navigation Satellite Systems)</a></li>
+        <li><a href="#">Antenna Systems for Space Applications</a></li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Antenna</summary>
+      <ul>
+        <li><a href="#">Smart Antennas for 5G/6G Applications</a></li>
+        <li><a href="#">Reconfigurable Antenna Design</a></li>
+        <li><a href="#">Antenna Miniaturization Techniques</a></li>
+        <li><a href="#">Antennas for IoT and Wearable Devices</a></li>
+        <li><a href="#">MIMO Antenna Systems</a></li>
+        <li><a href="#">Satellite and Space Antenna Technologies</a></li>
+      </ul>
+    </details>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.step-guide {
+  background-color: #f5faff;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #00263a;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    color: #012840;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #005f83;
+    margin-bottom: 2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+
+    h3 {
+      font-size: 1.2rem;
+      color: #0079a1;
+      margin-bottom: 0.5rem;
+    }
+
+    p,
+    ul,
+    ol {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        list-style: none;
+      }
+    }
+
+    em {
+      color: #555;
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    strong {
+      color: #00334d;
+    }
+  }
+
+  .cta {
+    background-color: #e3f6ff;
+    border-left: 4px solid #30c7ec;
+    padding: 1.5rem;
+    border-radius: 8px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .alluniversityfaq-section {
+    margin-top: 3rem;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #00475b;
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-items {
+      details {
+        background: #f8f9fc;
+        border: 1px solid #d1d9e6;
+        padding: 15px;
+        margin-bottom: 12px;
+        border-radius: 5px;
+
+        summary {
+          cursor: pointer;
+          font-weight: 600;
+          color: #004080;
+          font-size: 1.05rem;
+        }
+
+        p {
+          margin-top: 10px;
+          line-height: 1.6;
+          color: black;
+        }
+      }
+    }
+  }
+}

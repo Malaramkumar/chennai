@@ -1,0 +1,146 @@
+.scijournal-layout {
+  display: flex;
+  padding: 120px 2rem 2rem;
+  background: #f7f9fb;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 100px;
+
+  .scijournal-left-sidebar {
+    flex: 0 0 250px;
+  }
+
+  .scijournal-right-sidebar {
+    flex: 0 0 250px;
+    display: none;
+  }
+
+  .scijournal-main-content {
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.4rem;
+        color: #000;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+
+        li {
+          margin-bottom: 0.3rem;
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+      }
+
+      pre {
+        background: #f9f9f9;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        overflow-x: auto;
+        font-family: 'Courier New', monospace;
+      }
+
+      a {
+        color: #0b3d91;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+
+      &::after {
+        content: "← scroll →";
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.2rem;
+        font-size: 0.75rem;
+        color: #888;
+        display: none;
+
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
+
+      table {
+        width: 100%;
+        min-width: 700px;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        th,
+        td {
+          padding: 0.8rem;
+          border: 1px solid #ccc;
+          text-align: left;
+          white-space: nowrap;
+        }
+
+        th {
+          background-color: #e0e7ff;
+        }
+
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+
+        .journal-name {
+          font-weight: 600;
+          color: #0b3d91;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .scijournal-layout {
+    margin-left: 80px;
+    padding: 100px 1rem 1rem;
+  }
+
+  .scijournal-left-sidebar {
+    flex: 0 0 80px;
+  }
+
+  .scijournal-right-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .scijournal-layout {
+    margin-left: 0;
+    padding: 80px 1rem 1rem;
+    flex-direction: column;
+  }
+
+  .scijournal-left-sidebar,
+  .scijournal-right-sidebar {
+    display: none;
+  }
+
+  .scijournal-main-content {
+    padding-bottom: 70px;
+  }
+}

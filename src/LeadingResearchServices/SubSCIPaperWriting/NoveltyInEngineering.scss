@@ -1,0 +1,87 @@
+.engscopus-layout {
+  display: flex;
+  padding: 2rem;
+  background: #f7f9fb;
+  font-family: 'Poppins', sans-serif;
+
+  .engscopus-left-sidebar {
+    flex: 0 0 250px;
+    margin-left: 5rem;
+  }
+
+  .engscopus-right-sidebar {
+    flex: 0 0 250px;
+    margin-left: 2rem;
+  }
+
+  .engscopus-main-content {
+    flex: 1;
+
+    h1 {
+      font-size: 2rem;
+      color: #0b3d91;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.4rem;
+        color: #000;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+
+        li {
+          margin-bottom: 0.3rem;
+        }
+      }
+
+      p {
+        margin-top: 0.5rem;
+      }
+
+      blockquote {
+        background: #eef2f8;
+        border-left: 4px solid #0b3d91;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-style: italic;
+        color: #555;
+      }
+    }
+
+    .comparison-table {
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        th,
+        td {
+          padding: 0.8rem;
+          border: 1px solid #ccc;
+          text-align: left;
+        }
+
+        th {
+          background-color: #e0e7ff;
+        }
+
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+
+    .conclusion {
+      font-weight: 500;
+      color: #000;
+      margin-top: 2rem;
+      font-size: 1.05rem;
+    }
+  }
+}

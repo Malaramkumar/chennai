@@ -1,0 +1,94 @@
+.trending-topics {
+  background-color: #f8fbfd;
+  padding: 4rem 1.5rem;
+
+  .container {
+    max-width: 1024px;
+    margin: auto;
+    color: #002d42;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #003c5c;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #0079a1;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .topics-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .topic-card {
+      background: #ffffff;
+      border-left: 4px solid #30c7ec;
+      border-radius: 8px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+
+      h3 {
+        color: #004080;
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      ul {
+        padding-left: 1rem;
+
+        li {
+          font-size: 0.95rem;
+          margin-bottom: 0.4rem;
+          color: #333;
+          list-style: none;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+
+  .closing-note {
+    background: #e9f9ff;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-left: 4px solid #00a0d2;
+    border-radius: 6px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      color: #004f70;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .connect {
+      font-weight: bold;
+      color: #0079a1;
+    }
+  }
+}

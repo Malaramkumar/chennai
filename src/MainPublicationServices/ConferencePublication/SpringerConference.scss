@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.SpringerConference-container {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6f9ff, #e6ebf4);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.SpringerConference-left {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-right: 20px;
+  max-width: 320px;
+}
+
+.SpringerConference-main {
+  flex: 2.5;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.SpringerConference-right {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.SpringerConference-main h1,
+.SpringerConference-main h2,
+.SpringerConference-main h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #20344c;
+}
+
+.SpringerConference-main ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.SpringerConference-main ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.SpringerConference-faq {
+  margin-top: 40px;
+}
+
+.SpringerConference-faq h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.SpringerConference-faq p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.SpringerConference-keywords,
+.SpringerConference-highlight {
+  margin-bottom: 30px;
+}
+
+.SpringerConference-keywords ul,
+.SpringerConference-highlight ul {
+  list-style: disc;
+  padding-left: 18px;
+  color: #333;
+}
+
+.SpringerConference-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.SpringerConference-table th,
+.SpringerConference-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.SpringerConference-table th {
+  background-color: #f0f4fa;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .SpringerConference-container {
+    flex-direction: column;
+  }
+
+  .SpringerConference-left,
+  .SpringerConference-right,
+  .SpringerConference-main {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .SpringerConference-left,
+  .SpringerConference-right {
+    order: 2;
+  }
+
+  .SpringerConference-main {
+    order: 1;
+  }
+}
