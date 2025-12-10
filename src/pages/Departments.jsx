@@ -12,8 +12,7 @@ const departments = [
   {
     icon: <FaLaptopCode />,
     title: "Computer Science & Engineering (CSE)",
-    description:
-      "Advanced research and project development support in AI, Machine Learning, Cloud Computing, Cybersecurity, and Data Science.",
+    description: "Advanced research and project development support in AI, Machine Learning, Cloud Computing, Cybersecurity, and Data Science.",
     linkText: "Explore",
     link: "/departments/cse",
   },

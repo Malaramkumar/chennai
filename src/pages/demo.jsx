@@ -253,7 +253,6 @@ const Subheading = () => {
         }}
       />
     </section>  
-
     </div>
   );
 };

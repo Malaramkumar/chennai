@@ -19,40 +19,6 @@ body {
   width: 100%;
 }
 
-.sidebar {
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  width: 200px;
-  height: calc(100vh - 100px);
-  background-color: $primary-color;
-  color: #ffffff;
-  padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-
-  h2 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    li {
-      margin-bottom: 0.5rem;
-      a {
-        color: #ffffff;
-        text-decoration: none;
-        &:hover {
-          color: $accent-color;
-        }
-      }
-    }
-  }
-}
-
 .SelfPublishedBookISBNPublicationSupport-main {
   padding: 2rem;
   background-color: #f9fafc;
@@ -253,12 +219,6 @@ body {
       flex-direction: column;
       padding-left: 0;
       padding-top: 0;
-    }
-
-    .sidebar {
-      position: static;
-      width: 100%;
-      height: auto;
     }
 
     .SelfPublishedBookISBNPublicationSupport-main {

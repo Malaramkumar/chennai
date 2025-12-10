@@ -48,7 +48,7 @@ const AnuragUniversity = () => {
   return (
     <div className="telangana-main">
       <Subsidebar />
-
+      
       <div className="telangana-university-details-wrapper">
         <div className="telangana-content-layout">
           {/* Left Sidebar */}

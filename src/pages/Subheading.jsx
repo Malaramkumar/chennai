@@ -81,17 +81,16 @@ const universityData = {
 const Subheading = () => {
   useEffect(() => {
       document.title = "PhD Admission in Anna University Chennai";
-    },[]);  
+    },[]);       
 
   return (
     <div className="main">
       <Helmet>
         {/* Page Title */}
-        <title>PhD Admission in Anna University Chennai | Narpavitech</title>
+        <title>PhD Admission in Anna University Chennai || Narpavitech</title>
 
         {/* Meta Description */}
-        <meta
-          name="description"
+        <meta name="description"
           content="Get expert PhD research proposal writing services in Chennai from Narpavitech – a leading name in PhD guidance and support."
         />
 
@@ -113,7 +112,7 @@ const Subheading = () => {
           property="og:description"
           content="Get expert PhD research proposal writing services in Chennai from Narpavitech – a leading name in PhD guidance and support."
         />
-        <meta property="og:url" content="https://www.narpavitech.in/" />
+        <meta property="og:url" content="https://www.narpavitech.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.narpavitech.in/images/preview.jpg" />
 
@@ -127,7 +126,7 @@ const Subheading = () => {
         <meta name="twitter:image" content="https://www.narpavitech.in/images/preview.jpg" />
       </Helmet>
 
-      <Subsidebar />
+      <Subsidebar /> 
 
       <div className="university-details-wrapper">
         <div className="content-layout">
@@ -147,7 +146,6 @@ const Subheading = () => {
           <div className="university-details-container">
             <div className="phdimg" />
             <h2 className="university-title">{universityData.fullName}</h2>
-
             <div className="details-grid">
               <div className="detail-item">
                 <span className="detail-label">Popularly Known As</span>
