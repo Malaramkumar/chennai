@@ -197,13 +197,23 @@ const DataScienceDataEngineeringDataMiningProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="DataScienceDataEngineeringDataMiningProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/cybersecurity-project-development">Cybersecurity Project Development</a></li>
-              <li><a href="/cloud-computing-project-development">Cloud Computing Project Development</a></li>
-              <li><a href="/blockchain-project-development">Blockchain Project Development</a></li>
-              <li><a href="/big-data-project-development">Big Data Project Development</a></li>
-              <li><a href="/artificial-intelligence-project-development">Artificial Intelligence Project Development</a></li>
-            </ul>
+           <ul class="department-links">
+  <li><a href="/department/static-web-application">Static Web Application</a></li>
+  <li><a href="/department/dynamic-web-applications">Dynamic Web Applications</a></li>
+  <li><a href="/department/mobile-app">Mobile App Development</a></li>
+  <li><a href="/department/animations-project">Animations Project</a></li>
+  <li><a href="/department/ai-project">AI Project</a></li>
+  <li><a href="/department/data-science">Data Science</a></li>
+  <li><a href="/department/big-data">Big Data</a></li>
+  <li><a href="/department/blockchain">Blockchain</a></li>
+  <li><a href="/department/devops">DevOps</a></li>
+  <li><a href="/department/networking">Networking</a></li>
+  <li><a href="/department/image-processing">Image Processing</a></li>
+  <li><a href="/department/nlp">Natural Language Processing (NLP)</a></li>
+  <li><a href="/department/cloud-computing">Cloud Computing</a></li>
+  <li><a href="/department/cybersecurity">Cybersecurity</a></li>
+</ul>
+
           </div>
         </div>
       </div>

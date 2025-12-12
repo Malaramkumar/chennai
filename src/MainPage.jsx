@@ -483,7 +483,7 @@ import IndustrialProductionOptimization from './Mechanical/IndustrialProductionO
         import CostTimeOptimization from './Mechanical/IndustrialProductionOptimization/CostTimeOptimization'
 
 import Flip from "./flip"
-import Header from './Header'
+// import Header from './Header'
 import Design from './pages/Design';
 import Footer from './Footer';
 import Departments from './pages/DepartmentList';
@@ -491,7 +491,7 @@ import Departments from './pages/DepartmentList';
 function MainPage() {
   return(
    <>
-    <Header/>
+    {/* <Header/> */}
       <Routes>
      
         <Route path="/" element={<Home />} /> 

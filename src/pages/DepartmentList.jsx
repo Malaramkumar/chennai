@@ -16,7 +16,6 @@ import "./DepartmentList.scss";
 const DepartmentPage = () => {
   const navigate = useNavigate();
 
-  // ---------- DOMAINS (main routes only) ----------
   const domains = {
 cse: [
   { name: "Static Web Application Development", path: "/department/static-web-application" },
@@ -93,7 +92,6 @@ eee: [
     ],
   };
 
-  // ---------- DEPARTMENTS (left cards) ----------
   const departments = [
     {
       id: "mech",
